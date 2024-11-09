@@ -21,7 +21,7 @@ This project involves conducting an Exploratory Data Analysis (EDA) on a dataset
 
 ---
 ### Documentation
-1. Importing Libraries
+_**1. Importing Libraries**_
 ```# Import necessary libraries for data analysis and visualization
 import pandas as pd       # For data manipulation and analysis
 import numpy as np        # For numerical operations and array handling
@@ -30,7 +30,7 @@ import seaborn as sns     # For statistical data visualization
 ```
 In the initial step, essential libraries for data analysis and visualization are imported. pandas is used for data manipulation, allowing for structured operations on data tables, while numpy supports numerical operations and array handling, making mathematical calculations more efficient. Visualization libraries matplotlib.pyplot and seaborn are imported to create plots and graphs; matplotlib is fundamental for general plotting, while seaborn adds a layer of statistical visualization that simplifies the creation of aesthetically pleasing and informative plots.
 
-2. Loading and Previewing the Dataset
+_**2. Loading and Previewing the Dataset**_
 ```
 # Load the Spotify 2023 dataset
 spotify_data = pd.read_csv('spotify-2023.csv')
@@ -42,7 +42,7 @@ print(spotify_data.head())
 ```
 After importing libraries, the Spotify dataset is loaded using pandas.read_csv(). This function reads the CSV file and stores it as a DataFrame called spotify_data, which allows for tabular data manipulation. The info() function provides an overview of the dataset, including the number of entries, column names, data types, and non-null values. Meanwhile, head() displays the first few rows to familiarize us with the data’s structure and typical values, which is essential in understanding the dataset's layout and identifying any initial anomalies or patterns.
 
-3. Data Cleaning and Preprocessing
+_**3. Data Cleaning and Preprocessing**_
 ```
 # Check for missing values in the dataset
 # This step helps in identifying columns that may need imputation or removal
@@ -57,7 +57,7 @@ spotify_data.dropna(subset=['in_shazam_charts'], inplace=True)
 ```
 Data cleaning prepares the dataset by addressing missing values and irrelevant information. Here, the code checks for missing values in each column, helping to determine areas that require cleaning. To handle missing data, certain columns are filled with the most frequent value, while others with substantial missing values are removed if they are deemed uncritical to the analysis. For instance, key values might be filled with the mode (most common value), while rows with missing values in in_shazam_charts could be dropped. This step ensures a complete and consistent dataset, essential for accurate analysis.
 
-4. Top Tracks and Artists Analysis
+_**4. Top Tracks and Artists Analysis**_
 ```
 # Identify the top tracks by streams
 # Sorts data to identify which songs have the highest number of streams
@@ -71,7 +71,7 @@ This section focuses on identifying the most popular songs and artists. To deter
 #### ![output_8_1](https://github.com/user-attachments/assets/81da1d48-9255-4ac1-abab-74b2f6925928)
 #### ![output_10_1](https://github.com/user-attachments/assets/61fcef92-7d0c-4ccc-86a5-8cfac04bec2b)
 
-5. Release Trends Over Time
+_**5. Release Trends Over Time**_
 ```
 # Convert release dates to datetime format
 # This enables time-based analysis, such as monthly or yearly trends
@@ -89,7 +89,7 @@ To analyze trends in song releases over time, this section converts the release_
 #### ![output_13_0](https://github.com/user-attachments/assets/6763d297-7d8b-4363-b71c-aeef434a135a)
 #### ![output_16_1](https://github.com/user-attachments/assets/7b86049f-101e-4137-9dfa-945282da97e0)
 
-6. Analyzing Song Characteristics
+_**6. Analyzing Song Characteristics**_
 ```
 # Calculate correlation between song characteristics and streams
 # Shows how variables like danceability, energy, and tempo are associated with popularity
@@ -104,7 +104,7 @@ plt.show()
 Here, the focus shifts to understanding how song attributes relate to popularity. The code calculates correlations between song characteristics—such as danceability, energy, and tempo—and the number of streams. A correlation matrix visualizes these relationships with a heatmap, where stronger correlations indicate that certain characteristics may be linked with higher popularity. This analysis helps in identifying traits that are often associated with successful tracks, providing insights into the qualities that listeners might favor in popular music.
 #### ![output_19_0](https://github.com/user-attachments/assets/b97567eb-7fee-450b-b48a-99cd440967b1)
 
-7. Platform Popularity Comparison
+_**7. Platform Popularity Comparison**_
 ```
 # Analyze how frequently tracks appear on different streaming platforms
 # Counts appearances by platform to gauge where songs are most likely included
@@ -121,7 +121,7 @@ plt.show()
 This section examines the presence of songs across different streaming platforms. By counting the number of times songs appear on Spotify, Apple, and Deezer, the code reveals the distribution of tracks across these services. A bar plot visualizes these counts, allowing for an easy comparison of each platform’s popularity in terms of song availability. This insight helps in understanding platform-specific trends, which is beneficial for musicians and producers deciding where to promote their music for maximum reach.
 #### ![output_22_0](https://github.com/user-attachments/assets/fb7f1dc6-7bda-4cc9-997c-2c215f93f5f5)
 
-8. Key and Mode Analysis
+_**8. Key and Mode Analysis**_
 ```
 # Analyze distribution of keys in popular tracks
 # Checks if certain musical keys are more popular in high-stream tracks
@@ -137,7 +137,7 @@ plt.show()
 The analysis of musical keys focuses on understanding whether specific keys are more common among high-stream tracks. By filtering tracks with stream counts in the top 25% and analyzing their key distribution, the code determines if there’s a preference for certain musical keys. This bar plot of key distributions among top-streamed tracks helps reveal patterns or trends in musical composition for popular songs, offering insights into the tonal choices that may appeal to listeners.
 #### ![output_25_0](https://github.com/user-attachments/assets/e385e3f0-04cc-4092-b26e-8bbb355723ff)
 
-9. Artist Analysis: Playlist Appearances
+_**9. Artist Analysis: Playlist Appearances**_
 ```
 # Calculate the number of playlist appearances by artist
 # Helps identify which artists are most frequently included across platforms
@@ -183,7 +183,7 @@ Platform-wise, Spotify features the largest, most varied playlists, indicating a
 
 ---
 ### License
-This project is licensed under The Unlicense. Please see [LICENSE](https://github.com/draemonsi/Exploratory-Data-Analysis-on-Spotify-2023-Dataset/blob/main/LICENSE.txt) file for more details.
+This project is licensed under The Unlicense. Please see [LICENSE](https://github.com/draemonsi/ECE2112-Exploratory-Data-Analysis-on-Spotify-2023-Dataset/blob/main/LICENSE.txt) file for more details.
 
 ---
 ### Author
