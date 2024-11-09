@@ -183,7 +183,7 @@ Platform-wise, Spotify features the largest, most varied playlists, indicating a
 
 ---
 ### License
-This project is licensed under The Unlicense. Please see [LICENSE](https://github.com/draemonsi/ECE2112-Exploratory-Data-Analysis-on-Spotify-2023-Dataset/blob/main/LICENSE.txt) file for more details.
+This project is licensed under The Unlicense. Please see [LICENSE](https://github.com/draemonsi/ECE2112-Exploratory-Data-Analysis-on-Spotify-2023-Dataset/blob/main/LICENSE) file for more details.
 
 ---
 ### Author
